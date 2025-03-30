@@ -6,4 +6,28 @@
             android:icon="@drawable/ic_home"
             android:title="Home" />
     </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart"
+            android:title="Cart" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_products"
+            android:title="Product" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_favorites"
+            android:title="Favourite" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+    </group>
 </menu>

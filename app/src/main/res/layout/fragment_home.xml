@@ -1,14 +1,350 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragement" />
 
-</FrameLayout>
+    <!-- หัวข้อ -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product list"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center" />
+
+    <!-- Layout สำหรับสินค้า -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        >
+
+        <!-- สินค้า 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#15000000"
+            android:background="@drawable/group"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                android:src="@drawable/n1"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="บีเกิล"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="฿5000"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add to Cart"
+                android:textSize="9sp"
+                android:backgroundTint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+
+        </LinearLayout>
+
+        <!-- สินค้า 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#15000000"
+            android:background="@drawable/group"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                android:src="@drawable/n2"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ปั๊ก"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="฿5500"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add to Cart"
+                android:textSize="9sp"
+                android:backgroundTint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+        <!-- สินค้า 3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#15000000"
+            android:background="@drawable/group"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                android:src="@drawable/n3"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ชิสุ"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="฿3500"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add to Cart"
+                android:textSize="9sp"
+                android:backgroundTint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Layout สำหรับสินค้า2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp">
+
+        <!-- สินค้า4 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#15000000"
+            android:background="@drawable/group"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                android:src="@drawable/n4"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ชิวาว้า"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_price4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="฿7000"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add to Cart"
+                android:textSize="9sp"
+                android:backgroundTint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+        <!-- สินค้า 5 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#15000000"
+            android:background="@drawable/group"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                android:src="@drawable/n5"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="บีเกิล"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_price5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="฿4500"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add to Cart"
+                android:textSize="9sp"
+                android:backgroundTint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+        <!-- สินค้า 6 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#15000000"
+            android:background="@drawable/group"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                android:src="@drawable/n6"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ชามอย"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_price6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="฿20000"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_add_to_cart6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add to Cart"
+                android:textSize="9sp"
+                android:backgroundTint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
