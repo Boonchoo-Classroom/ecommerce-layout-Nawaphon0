@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             }
+
             drawerLayout.closeDrawer(GravityCompat.START)
             true
         }

@@ -30,3 +30,4 @@ class ProfileFragment : Fragment() {
     }
 
 }
+
